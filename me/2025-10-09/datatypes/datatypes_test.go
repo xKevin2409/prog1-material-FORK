@@ -42,6 +42,10 @@ func Example_various_data_types() {
 	fmt.Printf("%c\n", s3)
 	fmt.Println(s4)
 
+	for i := 2; i < 8; i++ {
+		fmt.Printf("%c\n", s2[i])
+	}
+
 	// Output:
 	// 0
 	// 55
@@ -54,5 +58,8 @@ func Example_various_data_types() {
 	// Hallo Welt!
 	// o
 	// llo We
+	// l
+	// l
+	// o
 
 }
