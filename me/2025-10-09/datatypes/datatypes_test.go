@@ -35,10 +35,12 @@ func Example_various_data_types() {
 	s2 := "Hallo Welt!"
 	// s3 fängt bei 0 an zu zählen, 4 ist also das 5. Zeichen in Hallo Welt!
 	s3 := s2[4]
+	s4 := s2[2:8]
 
 	fmt.Println(s1)
 	fmt.Println(s2)
 	fmt.Printf("%c\n", s3)
+	fmt.Println(s4)
 
 	// Output:
 	// 0
@@ -51,5 +53,6 @@ func Example_various_data_types() {
 	//
 	// Hallo Welt!
 	// o
+	// llo We
 
 }
