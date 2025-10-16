@@ -9,7 +9,7 @@ import (
 // y teilbare Zahl durch buzz und jede durch x und y
 // teilbare Zahl durch fizzbuzz
 func FizzImproved(x, y, n int) {
-	// Schleife von 1 bis 30, die prüft ob die zahlen durch 3 un/oder 5 teilbar sind
+
 	for i := 1; i < n; i++ {
 		if i%x == 0 && i%y == 0 {
 			fmt.Println("fizzbuzz")
