@@ -12,3 +12,11 @@ func BubbleUp(arr []int) bool {
 
 	return false
 }
+
+func BubbleSort(arr []int) {
+	for {
+		if !BubbleUp(arr) {
+			break
+		}
+	}
+}

@@ -22,3 +22,12 @@ func ExampleBubbleUp() {
 	// true
 	// [1 3 5 8 4]
 }
+
+func ExampleBubbleSort() {
+	a := []int{5, 1, 8, 3, 4}
+	BubbleSort(a)
+	fmt.Println(a)
+
+	// Output:
+	// [1 3 4 5 8]
+}
