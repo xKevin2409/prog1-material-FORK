@@ -11,6 +11,7 @@ func ExampleNewBoard() {
 
 func ExamplePrintBoard() {
 	PrintBoard(NewBoard())
+	//PrintBoard([][]string{{"1", "2"}, {"3", "4"}})
 
 	// Output:
 	// +---+---+---+
