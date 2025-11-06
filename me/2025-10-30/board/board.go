@@ -9,7 +9,6 @@ func NewBoard() [][]string {
 	return board
 }
 
-
-func PrintBoard(b [][]string) {
-	div := 
-}
+/* func PrintBoard(b [][]string) {
+	div :=
+} */
