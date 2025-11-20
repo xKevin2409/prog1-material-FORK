@@ -1,4 +1,4 @@
-package maumau
+package card
 
 import "fmt"
 

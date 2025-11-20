@@ -1,4 +1,4 @@
-package maumau
+package card
 
 type Rank int
 
