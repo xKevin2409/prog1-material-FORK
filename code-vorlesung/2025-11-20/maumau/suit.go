@@ -11,6 +11,11 @@ const (
 
 // String gibt eine lesbare Darstellung der Farbe zurück.
 func (s Suit) String() string {
+	return s.Name()
+}
+
+// Name gibt einen menschlich lesbaren Namen der Farbe zurück.
+func (s Suit) Name() string {
 	switch s {
 	case Clubs:
 		return "Clubs"
@@ -22,5 +27,21 @@ func (s Suit) String() string {
 		return "Spades"
 	default:
 		return "Unknown Suit"
+	}
+}
+
+// Symbol gibt das Symbol für die Farbe zurück.
+func (s Suit) Symbol() string {
+	switch s {
+	case Clubs:
+		return "♣"
+	case Diamonds:
+		return "♦"
+	case Hearts:
+		return "♥"
+	case Spades:
+		return "♠"
+	default:
+		return "?"
 	}
 }
