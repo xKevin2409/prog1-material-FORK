@@ -9,6 +9,11 @@ package aufgabe2
 // Alle anderen Zeichen sollen unverändert bleiben.
 func FilterDigits(s string) string {
 	result := ""
-	// TODO
+	for i := 0; i < len(s); i++ {
+		if s[i] < '0' || s[i] > '9' {
+			result += string(s[i])
+		}
+
+	}
 	return result
 }

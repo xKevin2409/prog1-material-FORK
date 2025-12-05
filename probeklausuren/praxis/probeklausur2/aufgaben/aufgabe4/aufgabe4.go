@@ -14,6 +14,6 @@ package aufgabe4
 // Für leere Listen soll für die Berechnung ggf. 0 verwendet werden.
 func ElementSums(l1, l2 []int) []int {
 	result := []int{}
-	// TODO
+
 	return result
 }
