@@ -1,5 +1,7 @@
 package aufgabe6
 
+import "slices"
+
 /*
 AUFGABENSTELLUNG: Vervollständigen Sie die Funktion SymmetricDifference.
 MAX. PUNKTE: 10
@@ -13,6 +15,23 @@ MAX. PUNKTE: 10
 // Ursprungslisten, mehrfach vorkommende Elemente werden entsprechend wiederholt.
 // Die Elemente aus l1 kommen vor denen aus l2 in der Ergebnisliste vor.
 func SymmetricDifference(l1, l2 []int) []int {
-	// TODO
-	return []int{}
+	var current int
+	var newlist []int
+
+	for i := 0; i < len(l1); i++ {
+		current = l1[i]
+		if !slices.Contains(l2, current) {
+			newlist = append(newlist, current)
+
+		}
+	}
+	for i := 0; i < len(l2); i++ {
+		current = l2[i]
+		if !slices.Contains(l1, current) {
+			newlist = append(newlist, current)
+
+		}
+	}
+
+	return newlist
 }

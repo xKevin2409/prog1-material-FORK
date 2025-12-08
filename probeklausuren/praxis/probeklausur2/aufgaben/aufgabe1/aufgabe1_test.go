@@ -24,3 +24,18 @@ func ExamplePrefixBelow10() {
 	// []
 	// []
 }
+
+// func PrefixBelow10(list []int) []int {
+// 	if len(list) == 0 {
+// 		var leereliste []int
+// 		return leereliste
+// 	}
+// 	var newlist []int
+// 	for i := 0; i < len(list) && list[i] < 10; i++ {
+// 		if list[i] < 10 {
+// 			newlist = append(newlist, list[i])
+// 		}
+
+// 	}
+// 	return newlist
+// }

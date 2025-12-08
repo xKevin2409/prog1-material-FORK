@@ -17,3 +17,14 @@ func ExampleFilterDigits() {
 	// ab
 	//
 }
+
+// func FilterDigits(s string) string {
+// 	result := ""
+// 	for i := 0; i < len(s); i++ {
+// 		if s[i] < '0' || s[i] > '9' {
+// 			result += string(s[i])
+// 		}
+
+// 	}
+// 	return result
+// }

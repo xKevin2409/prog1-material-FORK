@@ -12,6 +12,25 @@ package aufgabe6
 // ins Ergebnis übertragen werden.
 func DuplicateSinglets(list []int) []int {
 	result := []int{}
-	// TODO
+	counter := 0
+	roffl := 0
+	for i := 0; i < len(list); i++ {
+		roffl = list[i]
+		for j := 0; j < len(list); j++ {
+			if roffl == list[j] {
+				counter = counter + 1
+			}
+
+		}
+		if counter < 2 {
+			result = append(result, roffl)
+			result = append(result, roffl)
+		} else {
+			result = append(result, roffl)
+
+		}
+		counter = 0
+	}
+
 	return result
 }
