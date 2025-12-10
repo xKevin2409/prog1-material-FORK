@@ -7,15 +7,14 @@ ZUSATZBEDINGUNG: Die Funktion muss rekursiv sein.
 */
 
 // CountOdd erwartet eine Liste von Zahlen und liefert die Anzahl der ungeraden Zahlen darin.
-func CountOdd(list []int) int {
-	if len(list) == 0 {
+func CountOdd(nums []int) int {
+	if len(nums) == 0 {
 		return 0
 	}
 	count := 0
-	if list[0]%2 == 1 {
+	if nums[0]%2 == 1 {
 		count = 1
-	}
 
-	rest := list[1:]
-	return count + CountOdd(rest)
+	}
+	return count + CountOdd(nums[1:])
 }
